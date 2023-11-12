@@ -19,6 +19,19 @@ namespace _07_OverloadOperators
         {
             return $"X: {X}, Y: {Y}, Z: {Z}";
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Point3D d &&
+                   X == d.X &&
+                   Y == d.Y &&
+                   Z == d.Z;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(X, Y, Z);
+        }
     }
     class Point
     {
@@ -41,7 +54,6 @@ namespace _07_OverloadOperators
                    X == point.X &&
                    Y == point.Y;
         }
-
         public override int GetHashCode()
         {
             return HashCode.Combine(X, Y);
