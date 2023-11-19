@@ -29,7 +29,7 @@ namespace _09_Inheritance
             return $"Name : {name}\nBirthday {birthday.ToShortDateString()}";
         }
 
-        public abstract void DoWork();
+        public abstract void DoWork();//pure virtual method
     }
     //class Name :  BaseClass, Interface1, Interface2, Interface3
     class Worker: Person //public
