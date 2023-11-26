@@ -2,10 +2,10 @@
 
 namespace _11_StandartInterface
 {
-    class StudentCard :ICloneable
+    class StudentCard : ICloneable
     {
-        public int Number { get; set; }
-        public string Series { get; set; }
+        public int Number { get; set; }//11111 - 11111
+        public string Series { get; set; }//0c2c2c2 - 0c2c2c2
 
         public object Clone()
         {
@@ -134,6 +134,14 @@ namespace _11_StandartInterface
         static void Main(string[] args)
         {
 
+            //StudentCard studentCard = new StudentCard() { Number = 11111, Series = "AA" };
+            //StudentCard copy = (StudentCard)studentCard.Clone();
+            //Console.WriteLine(studentCard);
+            //Console.WriteLine(copy);
+            //copy.Series = "BBB";
+            //Console.WriteLine(studentCard);
+            //Console.WriteLine(copy);
+
             Student original = new Student
             {
                 FirstName = "Bill",
@@ -141,9 +149,10 @@ namespace _11_StandartInterface
                 Birthdate = new DateTime(2005, 4, 7),
                 StudentCard = new StudentCard() { Number = 123456, Series = "AA" }
             };
-            Console.WriteLine(original);
 
-            Student copy = (Student) original.Clone();
+            Student copy = (Student)original.Clone();
+            Console.WriteLine(original);
+            Console.WriteLine(copy);
             copy.StudentCard.Number = 1111111;
             Console.WriteLine(original);
             Console.WriteLine(copy);

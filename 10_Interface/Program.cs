@@ -41,7 +41,7 @@
     }
     class Director : Employee, IManager//implement/realize interface
     {
-        public List<IWorkable> ListOfWorkers { get; set ; }
+        public List<IWorkable> ListOfWorkers { get; set ; } // = null
 
         public void Control()
         {
@@ -64,7 +64,7 @@
 
         public string Work()
         {
-           return "I am selling product!";
+            return "I am selling product!";
         }
     }
     class Cashier : Employee, IWorkable
@@ -79,7 +79,9 @@
     class Administrator : Employee, IWorkable, IManager
     {
         public List<IWorkable> ListOfWorkers { get ; set; }
+        //public List<Employee> ListOfWorkers1 { get ; set; }
 
+     
         public bool IsWorking => true;
 
         public void Control()
@@ -117,6 +119,8 @@
 
             };
             
+
+           
             //director.Salary = 5;
             Console.WriteLine(director);
             director.Organize();
@@ -140,7 +144,7 @@
 
             director.ListOfWorkers = new List<IWorkable>
             {
-                seller,
+                  seller,
                   new Administrator
                   {
                       FirstName = "Sasha",
@@ -158,6 +162,7 @@
                     Salary = 1000
                   }
             };
+           
             Console.WriteLine();
             foreach (var item in director.ListOfWorkers)
             {
@@ -172,12 +177,12 @@
             }
 
             //Multiple interaces
-            Administrator admin = new Administrator();
+            Administrator admin = new Administrator();            
 
             IManager manager = admin;
-            manager.Control();
+            manager.Control();         
 
-            IWorkable worker = admin;
+            IWorkable worker = admin;           
             worker.Work();
 
         }

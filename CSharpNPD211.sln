@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_Indexers", "08_Indexers\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Inheritance", "09_Inheritance\09_Inheritance.csproj", "{27EDA79A-636B-466B-B43B-E48A7812445D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interface", "10_Interface\10_Interface.csproj", "{188B13BC-506C-4A56-84B3-CE468CE6F15D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_Interface", "10_Interface\10_Interface.csproj", "{188B13BC-506C-4A56-84B3-CE468CE6F15D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_StandartInterface", "11_StndartInterface\11_StandartInterface.csproj", "{7B165498-170F-49FA-9F11-6DBF718C4431}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_StandartInterface", "11_StndartInterface\11_StandartInterface.csproj", "{7B165498-170F-49FA-9F11-6DBF718C4431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Delegates", "12_Delegates\12_Delegates.csproj", "{874C9866-5F51-4A32-98DB-47404F778C88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{7B165498-170F-49FA-9F11-6DBF718C4431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B165498-170F-49FA-9F11-6DBF718C4431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B165498-170F-49FA-9F11-6DBF718C4431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874C9866-5F51-4A32-98DB-47404F778C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874C9866-5F51-4A32-98DB-47404F778C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874C9866-5F51-4A32-98DB-47404F778C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874C9866-5F51-4A32-98DB-47404F778C88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
