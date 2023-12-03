@@ -85,12 +85,7 @@
             }
         }
         static void Main(string[] args)
-        {
-
-          
-
-
-
+        {      
 
             int[] arr = new int[] { 5, 7, 36, 14, 25, 33, 89, 9 };
             foreach (var item in arr) Console.Write(item + " "); Console.WriteLine();
